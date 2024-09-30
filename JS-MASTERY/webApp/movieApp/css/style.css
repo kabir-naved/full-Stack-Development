@@ -41,12 +41,16 @@ h1{
     width: 100%;
     border-radius: 5px 5px 0 0;
 }
+
+.movieItems div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .movieItems h3{
     padding: 5px;
     font-size: 1rem;
-    text-align: left;
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
 }
 
 .moviePage{

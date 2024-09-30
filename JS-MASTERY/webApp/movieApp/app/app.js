@@ -28,7 +28,9 @@ let moviesNow = async (title = '', page = 1) => {
 
       moviesList.innerHTML += `<div class="movieItems">
                 <img src="${imageStaticUrl + poster_path}" alt="Movie Poster">
-                <h3>${original_title} | ${release_date}</h3>
+                <div>
+                  <h3>${original_title} | ${release_date}</h3>
+                </div>
             </div>`;
     });
 
