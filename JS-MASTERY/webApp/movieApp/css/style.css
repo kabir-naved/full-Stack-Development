@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+}
+
+.movieDiv{
+    width: 1320px;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+}
+.Form{
+    width: 50%;
+    margin: auto;
+}
+
+.Form input{
+    width: 100%;
+    text-align: left;
+    height: 40px;
+    padding-left: 10px;
+}
+h1{
+    padding: 20px 0px;
+    text-align:center;
+    color: #fff;
+}
+
+.movieItems{
+    flex-basis: 23%;
+    background-color: aqua;
+    margin: 1%;
+    border-radius: 5px 5px 0 0;
+}
+.movieItems img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.movieItems h3{
+    padding: 5px;
+    font-size: 1rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
+
+.moviePage{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+button{
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+}
+
+#prevPage {
+    display: none; /* Hidden by default */
+
+}
+
+
+
+.moviePage {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.moviePage button {
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.moviePage button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.moviePage button:disabled {
+    background-color: #ccc; /* Gray background for disabled buttons */
+    cursor: not-allowed; /* Not allowed cursor */
+    opacity: 0.6; /* Slightly transparent */
+}
+

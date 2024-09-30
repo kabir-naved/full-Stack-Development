@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Assistant", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}    
+
+html, body{
+    scroll-behavior: smooth;
+    scroll-padding: 80px;
+    width: 100%;
+}
+
+.main{
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.nav{
+    width: 100%;
+    background: #FFFFFF;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    position: fixed;
+    box-shadow: 0 5px 10px rgba(98, 97, 97, 0.329);
+}
+
+.nav-logo img{
+    width: 130px;
+    transform: scale(2);
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li{
+    padding-left: 30px;
+    font-size: 21px;
+    font-weight: 600;
+}
+.menu a{
+    text-decoration: none;
+    color: black;  
+}
+
+.menu a:hover{
+   color: #3496D8;
+}
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background: url(images/the-town-bg-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.section-1 h1{
+    padding-top: 210px;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.section-1 .arrow{
+    font-size: 80px;
+}
+
+.section-1 .arrow a{
+    color: white;
+}
+
+.section-1 .arrow a:hover{
+    color: #0A8FE7;
+}
+
+.introduction{
+    width: 100%;
+    display: flex;
+    padding: 100px;
+}
+
+.introduction img{
+    border-radius: 15px;
+}
+
+.content{
+    margin-left: 60px;
+    text-align: justify;
+}
+
+.content h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: #3496D8;
+}
+
+.content p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #8F8F9D;
+    margin-top: 30px;
+}
+
+button{
+    padding: 10px 40px;
+    background-color: #3496D8;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #3496D8;
+    opacity: 0.7;
+}
+
+.content-icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding: 0 100px;
+}
+
+.elem{
+    width: 30%;
+    margin-top: 15px;
+    text-align: center;
+
+
+}
+.content-icon .elem i {
+    font-size: 60px;
+    color: #3496D8;
+    margin-bottom: 30px;
+
+}
+
+.content-icon .elem h3{
+    font-size: 25px;
+    color: #3496D8;
+    margin-bottom: 25px;
+
+}
+
+
+.content-icon .elem p{
+    color: #3496D8;
+    margin-bottom: 25px;
+    color: #8F8F9D;
+    font-size: 20px;
+
+}
+
+.section-3{
+    margin: auto;
+    width: 85%;
+    padding-top: 50px;
+    padding-bottom: 50Px;
+}
+
+.section-3 h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #3496D8;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-3 p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #8F8F9D;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.gallery{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.gal{
+    width: 25%;
+    padding-right: 30px;
+}
+
+.gal img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    width: 100%;
+    padding: 0 220px;
+    background: url(images/the-town-bg-02.jpg) center fixed;
+    background-size: cover;
+}
+
+.footer h3 {
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-top: 120px;
+}
+
+.footer .borderline {
+    border-top: 2px solid white;
+    height: 8px;
+    width: 100%;
+    margin: 0 4px;
+    margin-top: 9px;
+    margin-bottom: 55px;
+}
+
+.footer .borderline .darkborder {
+    width: 25%;
+    background-color: white;
+    height: 8px;
+}
+.footer p {
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-weight: normal;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+
+.footer .fb {
+    width: 100%;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.footer .f1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 259px;
+}
+
+.footer .fc1 {
+    margin: 30PX 0;
+    width: 350px;
+    display: flex;
+}
+
+.footer .f1 .fc1 i {
+    font-size: 2.5rem;
+    color: white;
+    padding-right: 19px;
+}
+
+.footer .f1 span {
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    line-height: 38px;
+}
+
+.footer .fb .f1 .fc1 input {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background: inherit;
+    width: 235px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
+
+.footer .fb .f1 .fc1 button {
+    border-radius: 5px;
+    padding: 10px 29px;
+    font-size: 14px;
+    background: #3496D8;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #7093ab;
+}
+
+.footer .copy p {
+    text-align: center;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.679);
+    margin: 0;
+    font-size: 15px;
+}
+
+
+.f1 .fc1:hover i, .f1 .fc1:hover span {
+    color: #0A8FE7;
+}
+
+.fc1 input::placeholder{
+    color: white;
+}

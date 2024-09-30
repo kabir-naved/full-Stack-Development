@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    background-color: #ededed;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 29% 56% 15%;
+    grid-template-areas: 
+    "nav1 nav2 main"
+    "content content main"
+    "footer footer main";
+}
+
+.left-navbar {
+     grid-area: nav1;
+     padding: 40px;
+}
+
+.square {
+    height: 24px;
+    width: 24px;
+    background-color: black;
+    rotate: 45deg;
+}
+.right-navbar {
+    grid-area: nav2;
+    padding: 40px;
+    justify-self: right;
+    text-align: right;
+}
+
+.right-navbar span {
+    display: none;
+}
+
+.right-navbar h4 {
+    margin-bottom: 47px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.right-navbar h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.main {
+    grid-area: main;
+    padding-top: 35px;
+    padding-left: 5px;
+    padding-bottom: 35px;
+    padding-right: 125px;
+}
+.main video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.content {
+ 
+    grid-area: content;
+    padding: 40PX;
+
+}
+
+.content h1 {
+    font-size: 6vw;
+    line-height: 5.5VW;
+    font-weight: 450;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.content h1:nth-child(2n){
+text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: 391px;
+}
+
+.footer p {
+    font-size: 16px;
+    font-weight: 500;
+    color: ;
+}
+
+.arrow {
+    position: absolute;
+    top:50%;
+    left: 48%;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    color: white;
+}
+.search {
+    position: absolute;
+    top:4.5%;
+    left: 96%;
+    
+}
+.search span {
+    transform: rotate(90deg);
+    font-weight: 900;
+}
+
+.arrow span {
+    font-size: 50px;
+    font-weight: 150;
+}
+
+
+@media (max-width:600px) {
+    .container {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 8% 30% 50% 10%;
+        grid-template-areas: 
+        "nav1 nav2"
+        "content content"
+        "main main"
+        "footer footer";
+    }
+    
+    .left-navbar {
+         grid-area: nav1;
+         padding: 20px;
+         padding-left: 27px;
+    }
+    
+    .square {
+        height: 22px;
+        width: 22px;
+        background-color: black;
+        rotate: 45deg;
+    }
+
+    .right-navbar {
+        grid-area: nav2;
+        padding: 20px;
+    }
+    
+    .right-navbar h4 {
+        display: none;
+    }
+    
+    .right-navbar h5 {
+        display: none;
+    }
+
+
+    .right-navbar div span  {
+        position: absolute;
+        display: initial;
+        right: 2%;        
+    }
+
+    
+    .main {
+        grid-area: main;
+        padding: 25px;
+    }
+    .main video {
+        height: 45vh;
+        border-radius: 2px;
+    }
+    
+    .content {
+        grid-area: content;
+        padding: 20PX;
+        padding-left: 23%;
+    
+    }
+    
+    .content h1 {
+        font-size: 8vw;
+        line-height: 10VW;
+        font-weight: 450;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .content h1:nth-child(2n) {
+    text-align: center;
+    }
+
+    .footer {
+        grid-area: footer;
+        margin: 12px;
+        padding-top: 10px;
+        text-align: center;
+
+    }
+    
+    .footer p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #050505da;
+
+    }
+    
+    .arrow {
+        position: absolute;
+        top:38.9%;
+        left: 44%;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: orangered;
+        display: flex;
+        justify-content: center;
+        padding: 7px;
+        color: white;
+        rotate: 90deg;
+    }
+    
+    .arrow span {
+        font-size: 27px;
+        font-weight: 150;
+    }
+    
+    .search {
+        display: none;
+    }
+
+
+}
