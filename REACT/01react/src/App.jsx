@@ -22,7 +22,8 @@ function App() {
        <div className='flex justify-center items-center gap-3 pt-5'>
         <h1 className='text-center bg-red-200 p-2'>{count}</h1>
         <button onClick={changeName} className='bg-blue-400 rounded-md p-2'>Change</button>
-        <button onClick={changeNames} className='bg-blue-400 rounded-md p-2'>Change</button>
+        <button onClick={changeNames} className= 'bg-blue-400 rounded-md p-2'> BACK</button>
+        <Home />
        </div>
 
 
