@@ -4,11 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  let [passwordStatus,setPasswordStatus]=useState(false)
 
   return (
-    <div>
-      <p className='text-blue-500 text-center'>Hello</p>
+    <div className='flex justify-center items-center w-full h-screen'>
+      <div className=' bg-rose-400 p-6 rounded-lg flex gap-3'>
+        <input type={  passwordStatus ? 'text' : 'password' }  className='outline-[#0095ff] rounded-sm pl-2'/>
+        <button onClick={()=>  setPasswordStatus(!passwordStatus) } className='w-[70px] bg-blue-500 rounded-lg px-4 py-2 text-white'>{ passwordStatus ? 'hide' : 'show' }</button>
+      </div>
     </div>
      
   )
