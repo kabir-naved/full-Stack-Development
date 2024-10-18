@@ -1,4 +1,4 @@
-/* input[type=checkbox]:checked+label span:first-of-type {
+input[type=checkbox]:checked+label span:first-of-type {
 	background-color: #10B981;
 	border-color: #10B981;
 	color: #fff;
@@ -6,5 +6,7 @@
 
 input[type=checkbox]:checked+label span:nth-of-type(2) {
 	text-decoration: line-through;
+    /* text-decoration-color: rgba(251, 31, 31, 0.774); */
+    text-decoration-thickness: 1.5px;
 	color: #9CA3AF;
-} */
+}
