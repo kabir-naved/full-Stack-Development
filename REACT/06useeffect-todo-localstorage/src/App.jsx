@@ -73,9 +73,9 @@ function App() {
                 name="items"
               />
 
-              <button title="Save list">
+              <button title="Add items">
                 <svg
-                  className="w-5 h-5 text-gray-400 fill-current rounded hover:bg-gray-300 active:bg-gray-500"
+                  className="w-5 h-5 text-blue-400 fill-current rounded hover:bg-blue-300 active:bg-blue-500"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -186,7 +186,7 @@ function App() {
                             d="M3 15v3c0 .5523.44772 1 1 1h16c.5523 0 1-.4477 1-1v-3M3 15V6c0-.55228.44772-1 1-1h16c.5523 0 1 .44772 1 1v9M3 15h18M8 15v4m4-4v4m4-4v4m-5.5061-7.4939L12 10m0 0 1.5061-1.50614M12 10l1.5061 1.5061M12 10l-1.5061-1.50614"
                           />
                         </svg>
-                        <h2 className=" text-xl md:text-2xl font-semibold text-gray-600 text-red-500">
+                        <h2 className=" relative top-[-12px] text-xl md:text-2xl font-semibold text-gray-500 hover:text-red-500">
                           Your Todo List is Empty
                         </h2>
                       </div>
@@ -287,7 +287,7 @@ export default App;
 //                     <input className="flex-grow h-8 bg-transparent focus:outline-none font-medium rounded" type="text"
 //                         placeholder="add a new task" name='items'/>
 
-//                   <button  title="Save list">
+//                   <button  title="Add items">
 //                     <svg className="w-5 h-5 text-gray-400 fill-current rounded hover:bg-gray-300 active:bg-gray-500"
 //                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 //                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
