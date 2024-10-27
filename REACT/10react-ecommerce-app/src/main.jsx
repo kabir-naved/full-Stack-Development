@@ -1,15 +1,23 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import App from './App.jsx'
 import './index.css'
+import App from './App.jsx'
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
+import Banner from './Components/Banner.jsx'
+
 
 
 const router = createBrowserRouter([
   {
       path: '/',
-      element: <Layout/>,   
+      element: <Layout/>,
+      children: [
+        {
+          path: '/',
+          element: <Banner/>
+        }
+      ]
   }
 ])
 
