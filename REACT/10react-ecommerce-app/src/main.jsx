@@ -5,6 +5,8 @@ import App from './App.jsx'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import Banner from './Components/Banner.jsx'
+import Home from './Components/pages/Home.jsx'
+import Collection from './Components/pages/Collection.jsx'
 
 
 
@@ -15,7 +17,11 @@ const router = createBrowserRouter([
       children: [
         {
           path: '/',
-          element: <Banner/>
+          element: <Home/>
+        },
+        {
+          path: '/collection',
+          element: <Collection/>
         }
       ]
   }

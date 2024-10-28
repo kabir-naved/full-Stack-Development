@@ -4,6 +4,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
+import Card from "./Card";
+import Service from "./Service";
+import Product from "./Product";
 
 
 
@@ -19,6 +22,7 @@ function Banner() {
     ];
   
     return (
+      <>
       <Swiper
         modules={[Navigation, Pagination]}
         navigation
@@ -32,6 +36,11 @@ function Banner() {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <Card/>
+      <Service/>
+      <Product/>
+    </>
     );
   };
 

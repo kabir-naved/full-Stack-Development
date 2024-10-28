@@ -17,8 +17,8 @@ function Navbar() {
 
             {/* Search Bar */}
             <div className="flex-1 mx-4 flex justify-center">
-              <button className="bg-[#F8F8F8] flex items-center border w-[600px] border-gray-300 rounded-2xl py-2 px-2">
-                <select className="text-gray-600 rounded-l-md p-3 bg-transparent border-r">
+              <button className="bg-[#F8F8F8] flex items-center border w-[600px] border-gray-300 rounded-2xl py-1 px-2">
+                <select className="text-gray-600 rounded-l-md p-3 bg-transparent border-r outline-none">
                   <option>All Categories</option>
                   <option>Fruits & Vegetables</option>
                   <option>Bakery</option>
@@ -26,7 +26,7 @@ function Navbar() {
                 </select>
                 <input
                   type="text"
-                  className="w-full border-none p-3 outline-none bg-transparent"
+                  className="w-full border-none p-2 outline-none bg-transparent"
                   placeholder="Search for more than 20,000 products"
                 />
                 <IoIosSearch size={50} className="text-gray-500 ml-2" />
