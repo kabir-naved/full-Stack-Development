@@ -4,9 +4,9 @@ import './index.css'
 import App from './App.jsx'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
-import Banner from './Components/Banner.jsx'
-import Home from './Components/pages/Home.jsx'
 import Collection from './Components/pages/Collection.jsx'
+import Home from './Components/pages/Home.jsx'
+
 
 
 
@@ -14,17 +14,11 @@ const router = createBrowserRouter([
   {
       path: '/',
       element: <Layout/>,
-      children: [
-        {
-          path: '/',
-          element: <Home/>
-        },
-        {
-          path: '/collection',
-          element: <Collection/>
-        }
-      ]
-  }
+  },
+  {
+      path: '/home',
+      element: <Home/>
+  },
 ])
 
 

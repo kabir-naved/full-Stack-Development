@@ -1,8 +1,20 @@
 import React from 'react'
+import Card from '../Card'
+import Service from '../Service'
+import Product from '../Product'
+import Banner from '../Banner'
 
-export default function Collection() {
+ function Collection() {
   return (
-    <div>Collection</div>
-    <
+    <>
+      <Banner/>    
+      <Card/>
+      <Service/>
+      {/* <Product/> */}
+    </>
+    
   )
 }
+export default Collection
+
+

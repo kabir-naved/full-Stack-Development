@@ -16,314 +16,39 @@ function Product() {
           </a>
         </div>
         <div className="grid grid-cols-6 gap-4">
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <span className="bg-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">
-              15% OFF
-            </span>
-            <img
-              src="https://source.unsplash.com/100x100/?fruit"
-              alt="Product Image"
-              className="my-2 mx-auto"
-            />
-            <h3 className="text-sm font-semibold text-gray-800">
-              Sunstar Fresh Melon Juice
-            </h3>
-            <p className="text-xs text-gray-500">
-              1 Unit •{" "}
-              <span className="text-yellow-500">
-                4.5 <i className="fas fa-star"></i>
+          {/* Product Card */}
+          {Array(12).fill().map((_, index) => (
+            <div key={index} className="bg-white p-4 rounded-lg shadow-md">
+              <span className="bg-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">
+                15% OFF
               </span>
-            </p>
-            <p className="text-lg font-bold text-gray-900">$18.00</p>
-            <div className="flex items-center justify-between mt-3">
-              <div className="flex items-center space-x-1">
-                <button className="text-gray-500">-</button>
-                <span className="px-2 text-gray-700">1</span>
-                <button className="text-gray-500">+</button>
+              <img
+                src="https://source.unsplash.com/100x100/?fruit"
+                alt="Product Image"
+                className="my-2 mx-auto"
+              />
+              <h3 className="text-sm font-semibold text-gray-800">
+                Sunstar Fresh Melon Juice
+              </h3>
+              <p className="text-xs text-gray-500">
+                1 Unit •{" "}
+                <span className="text-yellow-500">
+                  4.5 <i className="fas fa-star"></i>
+                </span>
+              </p>
+              <p className="text-lg font-bold text-gray-900">$18.00</p>
+              <div className="flex items-center justify-between mt-3">
+                <div className="flex items-center space-x-1">
+                  <button className="text-gray-500">-</button>
+                  <span className="px-2 text-gray-700">1</span>
+                  <button className="text-gray-500">+</button>
+                </div>
+                <button className="bg-blue-500 text-white py-1 px-3 rounded-lg hover:bg-blue-600">
+                  Add to Cart
+                </button>
               </div>
-              <button className="text-sm text-blue-500">Add to Cart</button>
             </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <span className="bg-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">
-              15% OFF
-            </span>
-            <img
-              src="https://source.unsplash.com/100x100/?fruit"
-              alt="Product Image"
-              className="my-2 mx-auto"
-            />
-            <h3 className="text-sm font-semibold text-gray-800">
-              Sunstar Fresh Melon Juice
-            </h3>
-            <p className="text-xs text-gray-500">
-              1 Unit •{" "}
-              <span className="text-yellow-500">
-                4.5 <i className="fas fa-star"></i>
-              </span>
-            </p>
-            <p className="text-lg font-bold text-gray-900">$18.00</p>
-            <div className="flex items-center justify-between mt-3">
-              <div className="flex items-center space-x-1">
-                <button className="text-gray-500">-</button>
-                <span className="px-2 text-gray-700">1</span>
-                <button className="text-gray-500">+</button>
-              </div>
-              <button className="text-sm text-blue-500">Add to Cart</button>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <span className="bg-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">
-              15% OFF
-            </span>
-            <img
-              src="https://source.unsplash.com/100x100/?fruit"
-              alt="Product Image"
-              className="my-2 mx-auto"
-            />
-            <h3 className="text-sm font-semibold text-gray-800">
-              Sunstar Fresh Melon Juice
-            </h3>
-            <p className="text-xs text-gray-500">
-              1 Unit •{" "}
-              <span className="text-yellow-500">
-                4.5 <i className="fas fa-star"></i>
-              </span>
-            </p>
-            <p className="text-lg font-bold text-gray-900">$18.00</p>
-            <div className="flex items-center justify-between mt-3">
-              <div className="flex items-center space-x-1">
-                <button className="text-gray-500">-</button>
-                <span className="px-2 text-gray-700">1</span>
-                <button className="text-gray-500">+</button>
-              </div>
-              <button className="text-sm text-blue-500">Add to Cart</button>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <span className="bg-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">
-              15% OFF
-            </span>
-            <img
-              src="https://source.unsplash.com/100x100/?fruit"
-              alt="Product Image"
-              className="my-2 mx-auto"
-            />
-            <h3 className="text-sm font-semibold text-gray-800">
-              Sunstar Fresh Melon Juice
-            </h3>
-            <p className="text-xs text-gray-500">
-              1 Unit •{" "}
-              <span className="text-yellow-500">
-                4.5 <i className="fas fa-star"></i>
-              </span>
-            </p>
-            <p className="text-lg font-bold text-gray-900">$18.00</p>
-            <div className="flex items-center justify-between mt-3">
-              <div className="flex items-center space-x-1">
-                <button className="text-gray-500">-</button>
-                <span className="px-2 text-gray-700">1</span>
-                <button className="text-gray-500">+</button>
-              </div>
-              <button className="text-sm text-blue-500">Add to Cart</button>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <span className="bg-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">
-              15% OFF
-            </span>
-            <img
-              src="https://source.unsplash.com/100x100/?fruit"
-              alt="Product Image"
-              className="my-2 mx-auto"
-            />
-            <h3 className="text-sm font-semibold text-gray-800">
-              Sunstar Fresh Melon Juice
-            </h3>
-            <p className="text-xs text-gray-500">
-              1 Unit •{" "}
-              <span className="text-yellow-500">
-                4.5 <i className="fas fa-star"></i>
-              </span>
-            </p>
-            <p className="text-lg font-bold text-gray-900">$18.00</p>
-            <div className="flex items-center justify-between mt-3">
-              <div className="flex items-center space-x-1">
-                <button className="text-gray-500">-</button>
-                <span className="px-2 text-gray-700">1</span>
-                <button className="text-gray-500">+</button>
-              </div>
-              <button className="text-sm text-blue-500">Add to Cart</button>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <span className="bg-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">
-              15% OFF
-            </span>
-            <img
-              src="https://source.unsplash.com/100x100/?fruit"
-              alt="Product Image"
-              className="my-2 mx-auto"
-            />
-            <h3 className="text-sm font-semibold text-gray-800">
-              Sunstar Fresh Melon Juice
-            </h3>
-            <p className="text-xs text-gray-500">
-              1 Unit •{" "}
-              <span className="text-yellow-500">
-                4.5 <i className="fas fa-star"></i>
-              </span>
-            </p>
-            <p className="text-lg font-bold text-gray-900">$18.00</p>
-            <div className="flex items-center justify-between mt-3">
-              <div className="flex items-center space-x-1">
-                <button className="text-gray-500">-</button>
-                <span className="px-2 text-gray-700">1</span>
-                <button className="text-gray-500">+</button>
-              </div>
-              <button className="text-sm text-blue-500">Add to Cart</button>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <span className="bg-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">
-              15% OFF
-            </span>
-            <img
-              src="https://source.unsplash.com/100x100/?fruit"
-              alt="Product Image"
-              className="my-2 mx-auto"
-            />
-            <h3 className="text-sm font-semibold text-gray-800">
-              Sunstar Fresh Melon Juice
-            </h3>
-            <p className="text-xs text-gray-500">
-              1 Unit •{" "}
-              <span className="text-yellow-500">
-                4.5 <i className="fas fa-star"></i>
-              </span>
-            </p>
-            <p className="text-lg font-bold text-gray-900">$18.00</p>
-            <div className="flex items-center justify-between mt-3">
-              <div className="flex items-center space-x-1">
-                <button className="text-gray-500">-</button>
-                <span className="px-2 text-gray-700">1</span>
-                <button className="text-gray-500">+</button>
-              </div>
-              <button className="text-sm text-blue-500">Add to Cart</button>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <span className="bg-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">
-              15% OFF
-            </span>
-            <img
-              src="https://source.unsplash.com/100x100/?fruit"
-              alt="Product Image"
-              className="my-2 mx-auto"
-            />
-            <h3 className="text-sm font-semibold text-gray-800">
-              Sunstar Fresh Melon Juice
-            </h3>
-            <p className="text-xs text-gray-500">
-              1 Unit •{" "}
-              <span className="text-yellow-500">
-                4.5 <i className="fas fa-star"></i>
-              </span>
-            </p>
-            <p className="text-lg font-bold text-gray-900">$18.00</p>
-            <div className="flex items-center justify-between mt-3">
-              <div className="flex items-center space-x-1">
-                <button className="text-gray-500">-</button>
-                <span className="px-2 text-gray-700">1</span>
-                <button className="text-gray-500">+</button>
-              </div>
-              <button className="text-sm text-blue-500">Add to Cart</button>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <span className="bg-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">
-              15% OFF
-            </span>
-            <img
-              src="https://source.unsplash.com/100x100/?fruit"
-              alt="Product Image"
-              className="my-2 mx-auto"
-            />
-            <h3 className="text-sm font-semibold text-gray-800">
-              Sunstar Fresh Melon Juice
-            </h3>
-            <p className="text-xs text-gray-500">
-              1 Unit •{" "}
-              <span className="text-yellow-500">
-                4.5 <i className="fas fa-star"></i>
-              </span>
-            </p>
-            <p className="text-lg font-bold text-gray-900">$18.00</p>
-            <div className="flex items-center justify-between mt-3">
-              <div className="flex items-center space-x-1">
-                <button className="text-gray-500">-</button>
-                <span className="px-2 text-gray-700">1</span>
-                <button className="text-gray-500">+</button>
-              </div>
-              <button className="text-sm text-blue-500">Add to Cart</button>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <span className="bg-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">
-              15% OFF
-            </span>
-            <img
-              src="https://source.unsplash.com/100x100/?fruit"
-              alt="Product Image"
-              className="my-2 mx-auto"
-            />
-            <h3 className="text-sm font-semibold text-gray-800">
-              Sunstar Fresh Melon Juice
-            </h3>
-            <p className="text-xs text-gray-500">
-              1 Unit •{" "}
-              <span className="text-yellow-500">
-                4.5 <i className="fas fa-star"></i>
-              </span>
-            </p>
-            <p className="text-lg font-bold text-gray-900">$18.00</p>
-            <div className="flex items-center justify-between mt-3">
-              <div className="flex items-center space-x-1">
-                <button className="text-gray-500">-</button>
-                <span className="px-2 text-gray-700">1</span>
-                <button className="text-gray-500">+</button>
-              </div>
-              <button className="text-sm text-blue-500">Add to Cart</button>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <span className="bg-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">
-              15% OFF
-            </span>
-            <img
-              src="https://source.unsplash.com/100x100/?fruit"
-              alt="Product Image"
-              className="my-2 mx-auto"
-            />
-            <h3 className="text-sm font-semibold text-gray-800">
-              Sunstar Fresh Melon Juice
-            </h3>
-            <p className="text-xs text-gray-500">
-              1 Unit •{" "}
-              <span className="text-yellow-500">
-                4.5 <i className="fas fa-star"></i>
-              </span>
-            </p>
-            <p className="text-lg font-bold text-gray-900">$18.00</p>
-            <div className="flex items-center justify-between mt-3">
-              <div className="flex items-center space-x-1">
-                <button className="text-gray-500">-</button>
-                <span className="px-2 text-gray-700">1</span>
-                <button className="text-gray-500">+</button>
-              </div>
-              <button className="text-sm text-blue-500">Add to Cart</button>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
       <section className="bg-blue-100 py-12">
