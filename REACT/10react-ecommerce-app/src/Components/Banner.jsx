@@ -18,7 +18,7 @@ function Banner() {
 
   return (
     <>
-      {/* Single Image for Small Screens */}
+ 
       <div className="relative w-full h-[300px] md:hidden">
         <img src={images[0]} alt="Banner" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-75"></div>
@@ -29,7 +29,7 @@ function Banner() {
         </div>
       </div>
 
-      {/* Swiper Carousel for Medium Screens and Up */}
+      {/* Swiper Carousel */}
       <div className="relative w-full h-[570px] hidden md:block">
         <Swiper
           modules={[Navigation, Pagination]}
@@ -55,7 +55,7 @@ function Banner() {
             </SwiperSlide>
           ))}
 
-          {/* Custom Navigation Buttons */}
+          {/* Navigation Buttons */}
           <button className="swiper-button-prev absolute top-1/2 -left-5 transform -translate-y-1/2 text-white p-2 hover:text-gray-300">
             <IoChevronBack size={24} />
           </button>

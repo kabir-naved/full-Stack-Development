@@ -1,13 +1,13 @@
 import React from "react";
-import { SiReact } from "react-icons/si"; // Importing the React logo from react-icons
-import { FaShippingFast, FaComments, FaUndoAlt, FaCreditCard } from "react-icons/fa"; // Importing other icons
+import { SiReact } from "react-icons/si"; 
+import { FaShippingFast, FaComments, FaUndoAlt, FaCreditCard } from "react-icons/fa";
 
 function Service() {
   return (
     <div className="bg-gray-100 py-6">
       <div className="flex flex-col justify-center items-center bg-white p-4 shadow-lg rounded-lg max-w-5xl mx-auto space-y-4">
         
-        {/* Service Items */}
+      
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-between w-full">
           {/* Free Shipping */}
           <div className="flex items-center mx-4 space-x-3 hover:bg-blue-100 transition duration-300 p-2 rounded-md w-full sm:w-auto">
@@ -27,7 +27,7 @@ function Service() {
             </div>
           </div>
 
-          {/* Satisfied or Return */}
+          {/* Return */}
           <div className="flex items-center mx-4 space-x-3 hover:bg-blue-100 transition duration-300 p-2 rounded-md w-full sm:w-auto">
             <FaUndoAlt className="text-blue-500 text-2xl" />
             <div>

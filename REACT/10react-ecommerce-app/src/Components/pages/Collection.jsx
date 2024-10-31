@@ -10,7 +10,7 @@ import Banner from '../Banner'
       <Banner/>    
       <Card/>
       <Service/>
-      {/* <Product/> */}
+      <Product/>
     </>
     
   )
