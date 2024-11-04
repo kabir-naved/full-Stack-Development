@@ -7,9 +7,9 @@ function Marquees() {
                     ["./public/assets/marquee-2/accel-1.svg","./public/assets/marquee-2/doxel-1.svg", "./public/assets/marquee-2/haufe-1.svg", "./public/assets/marquee-2/mural-1.svg", "./public/assets/marquee-2/rainfall-1.svg", "./public/assets/marquee-2/rainfall-1.svg", "./public/assets/marquee-2/rocket-1.svg", "./public/assets/marquee-2/spotify-1.svg", "./public/assets/marquee-2/webflow-1.svg", "./public/assets/marquee-2/weglot-1.svg", "./public/assets/marquee-2/yahoo-1.svg"]
     ]
   return (
-    <div className='mt-32'>
+    <div className='mt-32 py-20 w-full relative overflow-hidden'>
         {images.map((item, index) => (
-            <Marquee imagesUrl = {item}/>
+            <Marquee key = {index} direction ={index===0 ? "left" : "right"} imagesUrl = {item}/>
         ))}
     </div>
   )
