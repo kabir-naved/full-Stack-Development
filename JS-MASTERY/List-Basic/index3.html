@@ -1,0 +1,219 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        ul{
+            padding: 30px 50px ;
+        }
+
+        
+        
+
+    </style>
+</head>
+<body>
+   <ul>
+    <li>first</li>
+   </ul>
+
+   <input type="text">
+   <button id="add">Add</button>
+   <button id="remove">Remove</button>
+   
+    <script>
+     const input = document.querySelector('input')
+     const add = document.querySelector('#add')
+     const remove = document.querySelector('#remove')
+     const ul = document.querySelector('ul')
+     const h4 = document.querySelector('h4')
+     let li;
+        
+     add.addEventListener('click', (e) => {
+        e.preventDefault()
+        li = document.createElement('li')
+        li.innerText = input.value
+        ul.appendChild(li)
+        // input.value =''
+        if(input.value === ""){
+            h4.textContent = 'hai'
+        }else{                                  
+           h4.textContent  = "  "
+        }
+
+
+     })
+     remove.addEventListener('click', () => {
+        ul.removeChild(ul.lastChild)
+
+     })
+     
+
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive List</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 400px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h4 {
+            color: red;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 20px;
+            margin: 20px 0;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        ul li {
+            padding: 10px;
+            margin-bottom: 5px;
+            background: #e3e3e3;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        ul li:hover {
+            background-color: #d3d3d3;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        #add {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        #add:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        #remove {
+            background-color: #f44336;
+            color: #fff;
+        }
+
+        #remove:hover {
+            background-color: #e53935;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>First</li>
+        </ul>
+
+        <input type="text" placeholder="Enter a new item">
+        <div>
+            <button id="add">Add</button>
+            <button id="remove">Remove</button>
+        </div>
+        <h4></h4>
+    </div>
+   
+    <script>
+        const input = document.querySelector('input');
+        const add = document.querySelector('#add');
+        const remove = document.querySelector('#remove');
+        const ul = document.querySelector('ul');
+        const h4 = document.querySelector('h4');
+        
+        add.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (input.value.trim() === "") {
+                h4.textContent = 'Input cannot be empty';
+            } else {                                  
+                h4.textContent = "";
+                const li = document.createElement('li');
+                li.innerText = input.value.trim();
+                ul.appendChild(li);
+                input.value = '';  // Clear the input field after adding
+            }
+        });
+
+        remove.addEventListener('click', () => {
+            if (ul.lastElementChild) { // Check if there is a last element before removing
+                ul.removeChild(ul.lastElementChild);
+            }
+        });
+    </script>
+</body>
+</html>

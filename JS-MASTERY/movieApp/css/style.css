@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #e50914; /* Netflix red theme */
+}
+
+.Form {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.Form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #1f1f1f;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.movieDiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.movieItems {
+    flex-basis: 23%;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movieItems:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.movieItems img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.movieItems div {
+    padding: 10px;
+    text-align: center;
+}
+
+.movieItems h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #f5f5f5;
+}
+
+.moviePage {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.moviePage button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.moviePage button:hover {
+    background-color: #f40612;
+    transform: scale(1.1);
+}
+
+.moviePage button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+}

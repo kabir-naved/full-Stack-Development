@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3700b3;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            background-color: #03dac5;
+            transform: scale(0.95);
+        }
+
+        /* Paragraph Styling */
+        p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.6;
+            max-width: 600px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <button>Click Me</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, dolore?</p>
+
+    <script>
+        const btn = document.querySelector('button');
+        const para = document.querySelector('p');
+        btn.addEventListener('click', () => {
+            para.innerHTML = "You changed the paragraph!";
+            console.log(para);
+        });
+    </script>
+</body>
+</html>

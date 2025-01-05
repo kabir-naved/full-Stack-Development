@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+        }
+
+        .progress-bar {
+            text-align: center;
+        }
+
+        .progress-outer {
+            width: 400px;
+            height: 15px;
+            background: #e0e0e0;
+            border-radius: 50px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+        }
+
+        .progress-inner {
+            width: 10%;
+            height: 100%;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            transition: width 0.3s ease-out;
+            border-radius: 50px;
+        }
+
+        .bar-title {
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 15px;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .bar-title.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar">
+        <div class="bar-title">Download Completed</div>
+        <div class="progress-outer">
+            <div class="progress-inner"></div>
+        </div>
+    </div>
+
+    <script>
+        const progressBar = document.querySelector('.progress-inner');
+        const title = document.querySelector('.bar-title');
+        let count = 0;
+        let interval = setInterval(() => {
+            if (count >= 100) {
+                title.classList.add('visible');
+                clearInterval(interval);
+            } else {
+                count++;
+                progressBar.style.width = count + '%';
+            }
+        }, 30);
+    </script>
+</body>
+</html>
